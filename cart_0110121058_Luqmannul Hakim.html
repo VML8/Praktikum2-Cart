@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {height: 100%;}
+        body {margin: 0; min-height: 100%;}
+        header {background-color:pink; padding-top: 12px; padding-bottom: 12px; border-bottom: 2px solid;}
+        main {margin: 40px; display: flex; min-height: 69vh;}
+        footer {width: 100%; background-color: pink; border-top: 2px solid black;}
+        nav {padding-left: 12px; padding-right: 12px;}
+        h1 {margin: 0; padding: 0;}
+        table {border-collapse: collapse; width: 100%;}
+        th {border: 0px;}
+        td {border: 0px}
+        ul {padding: 0px; margin: 0px; list-style: none; text-align: right;}
+        li {display: inline;}
+        a {text-decoration: none;}
+        .table-padding {width: 1%; white-space: nowrap; padding-left: 6px; padding-right: 6px;}
+        .table-vertical-padding {padding-top: 4px; padding-bottom: 4px;}
+        .no-margin {margin:0px}
+        .no-padding {padding:0px; width: 1%; white-space: nowrap;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr style="height: 16px;">
+                    <th rowspan="3" style="padding-left: 6px; padding-right: 40px; width: 1%; white-space: nowrap;"><!--insert smol black box icon--><h1>Site Name</h1></th>
+                </tr>
+                <tr>
+                    <th class="table-padding"><a href="#">Category 1</a></th>
+                    <th class="table-padding" style="border-left: 1px solid black;"><a href="#">Category 2</a></th>
+                    <th class="table-padding" style="border-left: 1px solid black;"><a href="#">Category 3</a></th>
+                    <th></th>   <!--flexible space-->
+                    <th style="border-collapse: collapse; border: 1px; width: 12%;">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-search"></i></a></li>
+                            <li style="margin-left: 12px;"><a href="#"><i class="bi bi-cart4"></i> Cart (1)</a></li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr style="height: 16px;">
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <div style="width: 65%; display: inline-block;">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+                        <th style="text-align: left; width: 60%; padding-top: 5px;"><text>Item</text></th>
+                        <th style="text-align: left; width: 20%; padding-top: 5px;"><text>Price</text></th>
+                        <th style="text-align: left; width: 20%; padding-top: 5px;"><text>Quantity</text></th>
+                    </tr>
+                </thead>   
+                <tbody>
+                    <tr>
+                        <td style="align-items: center; display: flex;">
+                            <img style="width: 25%; margin-right: 26px;" src="img/mk-80.jpg" alt="MK-80">
+                            <pre style="margin: 0; white-space: normal; font-family: Times New Roman;">
+                                MK-80 Mechanical Keyboard
+                                Theme : Dark
+                            </pre>
+                        </td>
+                        <td>
+                            <text><b>$ 92</b></text>
+                        </td>
+                        <td>
+                            <select name="quantity" id="qty">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="border-top: 1px solid gray; text-align: right; border-bottom: 1px solid gray;">
+                            <text>Subtotal: <b>$92.00</b></text>
+                        </td>
+                    </tr>
+                </tfoot>
+                </tr>
+            </table>
+        </div>
+        <aside style="width: 35%; float: right;">
+            <div style="margin: 20px; background-color: lavenderblush; white-space: nowrap;">
+            <div style="padding: 8px;">
+                <text style="font-size: 14pt; font-weight: bold; margin: 6px;">Summary (1 item)</text>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="table-vertical-padding">Subtotal</td>
+                            <td align="right">$ 92.00</td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Shipping</td>
+                            <td align="right">-</td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Est. Taxes</td>
+                            <td align="right">-</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><hr style="margin: 0"></td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Total</td>
+                            <td align="right">$ 92.00</td>
+                        </tr>
+                        <br><br>
+                        <tr>
+                            <td colspan="2" align="center" style="border: 2px solid black; background-color: lavender;"><a href="checkout_0110121058_Luqmannul Hakim.html">Checkout</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div style="margin: 10px; padding-bottom: 3px;">
+            <table>
+                <tr>
+                    <td colspan="3" class="table-padding">
+                        <text><b>Site Name</b></a>
+                    </td>
+                    <td class="table-padding">
+                        <a href="#">Catergory X</a>
+                    </td>
+                    <td class="table-padding">
+                        <a href="#">Category Y</a>
+                    </td>
+                    <td class="table-paddding">
+                        <a href="#">Category Z</a>
+                    </td>
+                    <td></td>
+                    <td class="table-padding">
+                        <p class="no-margin" style="padding-left: 30px;">Stay In Touch! Join our <b>Newsletter<b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px;"><i class="fa fa-cc-visa"></i></td>
+                    <td><i class="fa fa-cc-mastercard"></i></td>
+                    <td><i class="fa fa-cc-paypal"></i></td>
+                    <td colspan="4"></td>
+                    <td align="right">
+                        <input type="text" placeholder="Enter Email" width="80px">
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>

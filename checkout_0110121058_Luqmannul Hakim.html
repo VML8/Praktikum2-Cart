@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {height: 100%;}
+        body {margin: 0;}
+        header {background-color:pink; padding-top: 12px; padding-bottom: 12px; border-bottom: 2px solid;}
+        main {margin: 40px; display: flex; min-height: 69vh;}
+        footer {width: 100%; background-color: pink; border-top: 2px solid black;}
+        nav {padding-left: 12px; padding-right: 12px;}
+        h1 {margin: 0; padding: 0;}
+        table {border-collapse: collapse; width: 100%;}
+        th {border: 0px;}
+        td {border: 0px}
+        ul {padding: 0px; margin: 0px; list-style: none; text-align: right;}
+        li {display: inline;}
+        .table-padding {width: 1%; white-space: nowrap; padding-left: 6px; padding-right: 6px;}
+        .table-vertical-padding {padding-top: 4px; padding-bottom: 4px;}
+        .no-margin {margin:0px}
+        .no-padding {padding:0px; width: 1%; white-space: nowrap;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <table>
+                <tr style="height: 16px;">
+                    <th rowspan="3" style="padding-left: 6px; padding-right: 40px; width: 1%; white-space: nowrap;"><!--insert smol black box icon--><h1>Site Name</h1></th>
+                </tr>
+                <tr>
+                    <th class="table-padding"><a href="#">Category 1</a></th>
+                    <th class="table-padding" style="border-left: 1px solid black;"><a href="#">Category 2</a></th>
+                    <th class="table-padding" style="border-left: 1px solid black;"><a href="#">Category 3</a></th>
+                    <th></th>   <!--flexible space-->
+                    <th style="border-collapse: collapse; border: 1px; width: 12%;">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-search"></i></a></li>
+                            <li style="margin-left: 12px;"><a href="#"><i class="bi bi-cart4"></i> Cart (1)</a></li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr style="height: 16px;">
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+        <div style="width: 73%; display: inline-block;">
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2" class="table-padding">
+                                <h1 style="font-size: 200%;"><i class="bi bi-cart-check-fill"></i></h1>
+                            </th>
+                            <th align="left"><small>Order 131217312</small></th>
+                        </tr>
+                        <tr>
+                            <th align="left"><text>Thank you, Kenny!</text></th>
+                        </tr>
+                    </thead>
+                </table>
+                <br><hr> 
+                <p>
+                    Your order is confirmed.
+                    <br><br>
+                    We've accepted your order and we're getting it ready.
+                </p>
+                <br><hr>
+                <h2>Customer Information</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="table-vertical-padding">
+                                <b>Shipping Address</b>
+                                Naut Bubble
+                                <address><a href="#">
+                                17 Sea Anchor Road <br>
+                                Aquno, Waive 42690 <br>
+                                Atlantiz </a>
+                                </address>
+                            </td>
+                            <td class="table-vertical-padding">
+                                <b>Billing Address</b>
+                                <br>Naut Bubble
+                                <address><a href="#">
+                                17 Sea Anchor Road <br>
+                                Aquno, Waive 42690 <br>
+                                Atlantiz </a>
+                                </address>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">
+                                <b>Shipping Method</b>
+                                <text>
+                                    <br>Pacific Express<br>(Estimated ship time of 2-8 days)
+                                </text>
+                            </td>
+                            <td class="table-vertical-padding">
+                                <b>Payment Method</b>
+                                <br>
+                                <text><i class="fa fa-cc-visa"> Ending in 4215 - $100.00</i></text>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </section>
+        </div>
+        <aside style="width: 27%; float: right;">
+            <div style="margin: 20px; background-color: lavenderblush; white-space: nowrap;">
+            <div style="padding: 8px;">
+                <text style="font-size: 14pt; font-weight: bold; margin: 6px;">Summary (1 item)</text>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="table-vertical-padding">Subtotal</td>
+                            <td align="right">$ 92.00</td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Shipping</td>
+                            <td align="right">$ 3.80</td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Est. Taxes</td>
+                            <td align="right">$ 4.20</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><hr style="margin: 0"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <text>Gift card or discount code</text> <br>
+                                <input type="text" placeholder="Enter Email" width="80px">
+                                <input type="submit">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><hr></td>
+                        </tr>
+                        <tr>
+                            <td class="table-vertical-padding">Total</td>
+                            <td align="right">$ 100.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div style="margin: 10px; padding-bottom: 3px;">
+            <table>
+                <tr>
+                    <td colspan="3" class="table-padding">
+                        <text><b>Site Name</b></a>
+                    </td>
+                    <td class="table-padding">
+                        <a href="#">Catergory X</a>
+                    </td>
+                    <td class="table-padding">
+                        <a href="#">Category Y</a>
+                    </td>
+                    <td class="table-paddding">
+                        <a href="#">Category Z</a>
+                    </td>
+                    <td></td>
+                    <td class="table-padding">
+                        <p class="no-margin" style="padding-left: 30px;">Stay In Touch! Join our <b>Newsletter<b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 5px;"><i class="fa fa-cc-visa"></i></td>
+                    <td><i class="fa fa-cc-mastercard"></i></td>
+                    <td><i class="fa fa-cc-paypal"></i></td>
+                    <td colspan="4"></td>
+                    <td align="right">
+                        <input type="text" placeholder="Enter Email" width="80px">
+                        <input type="submit">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+</body>
+</html>
